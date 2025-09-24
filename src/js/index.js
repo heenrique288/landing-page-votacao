@@ -1,5 +1,5 @@
 function abrirPopup(usuarioId) {
-    fetch("/SITE/get_filme_tmdb.php?id=" + usuarioId)
+    fetch("get_filme_tmdb.php?id=" + usuarioId)
     .then(response => response.json())
     .then(data => {
         if(data.length === 0){
